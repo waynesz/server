@@ -1461,9 +1461,16 @@ doesnotexist:-o-prefocus, .strengthify-wrapper {
 					text-overflow: ellipsis;
 				}
 			}
-			&:not(.row--editable) a {
-			overflow: hidden;
-		}
+			&:not(.row--editable) {
+				&.name,
+				&.password,
+				&.displayName,
+				&.mailAddress,
+				&.userBackend,
+				&.languages {
+					overflow: hidden;
+				}
+			}
 
 			.groups,
 			.subadmins,
